@@ -1,6 +1,10 @@
 source("./renameFields.R")
 source("./readActivities.R")
 
+# This function merges the data from each of the three files for a data set,
+# and selects the mean and standard deviation columns.
+# The names of the features are loaded from the features file,
+# and used to label the columns of the independent varaibles file
 loadData<-function(featuresFile, xdataFile, ydataFile, subjectsFile) {
     # Read the field names from the features file
     features<-read.table(featuresFile, header=FALSE, stringsAsFactors=FALSE)

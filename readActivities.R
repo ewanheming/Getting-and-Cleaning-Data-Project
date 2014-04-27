@@ -1,3 +1,4 @@
+# This function reads the activities for a data set and turns them into factors
 readActivities<-function(activitiesFilename) {
     # Read the outcome variable
     activities<-read.table(activitiesFilename, header=FALSE)
